@@ -1,0 +1,4 @@
+/.idea/*
+/.git/
+*.sqlite3
+*.pyc
