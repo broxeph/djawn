@@ -7,9 +7,10 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 dj-database-url = "*"
-"psycopg2" = "*"
+"psycopg2-binary" = "*"
 
 [dev-packages]
+coverage = "*"
 
 [requires]
 python_version = "3.6"
