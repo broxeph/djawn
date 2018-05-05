@@ -1,6 +1,6 @@
 from django.db import models
 
-from apps.base.models import TimeStampedModel
+from base.models import TimeStampedModel
 
 
 class Organization(TimeStampedModel):

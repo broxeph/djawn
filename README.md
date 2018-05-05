@@ -9,12 +9,34 @@ Down the road, we might add goodies like GraphQL and Docker, but let's stick to 
 To Do
 -----
 
-- Move frontend to separate SPA, add router
-- Add factories, tests
+- `App.css` -> SCSS
+- Add router
+- Add factories, tests (factory-boy/Cypress)
 - Integrate Redux
 - Dockerize?
-- Push to Heroku
+- Push to Heroku/AWS
+- Auth (JWT?)
+- DRF versioning (v1)
 - CI integration (Travis? Heroku CI?)
+
+Stack
+-----
+
+- Backend
+    - Heroku
+    - Docker (?)
+    - Postgres 9.6 (10.0?)
+    - Redis (?)
+    - Django 2.0
+    - django-rest-framework
+- Frontend
+    - Redux (?)
+    - React 16.3
+    - Bootstrap 4.1
+    - SCSS
+- Tests
+    - Django
+    - Cypress (?)
 
 Installation
 ------------
