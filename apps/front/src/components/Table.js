@@ -8,11 +8,11 @@ const Table = ({ data }) =>
   !data.length ? (
     <p>Nothing to show</p>
   ) : (
-    <div className="column">
-      <h2 className="subtitle">
+    <div className="row">
+      <h2>
         Showing <strong>{data.length} items</strong>
       </h2>
-      <table className="table is-striped">
+      <table className="table table-striped">
         <thead>
           <tr>
             {Object.entries(data[0]).map(el => <th key={uuid()}>{el[0]}</th>)}

@@ -3,16 +3,18 @@ DJawn
 
 A CRM based on DRF and React.
 
+Basically, it's high time Alex learned a JS framework.
+Down the road, we might add goodies like GraphQL, but let's stick to the basics for now.
+
 To Do
 -----
 
-- Add tests
+- Add factories, tests
 - Dockerize?
-- Use Bootstrap
 - Push to Heroku
 - Integrate Redux
 - Move frontend to separate SPA
-- CI integration?
+- CI integration (Travis?)
 
 Installation
 ------------
