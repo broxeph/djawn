@@ -12,6 +12,8 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+DEBUG = False
+
 SECRET_KEY = os.environ['SECRET_KEY']
 
 ALLOWED_HOSTS = []
