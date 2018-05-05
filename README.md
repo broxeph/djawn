@@ -9,13 +9,13 @@ Down the road, we might add goodies like GraphQL and Docker, but let's stick to 
 To Do
 -----
 
-- `App.css` -> SCSS
 - Add router
 - Add factories, tests (factory-boy/Cypress)
 - Integrate Redux
 - Dockerize?
 - Push to Heroku/AWS
 - Auth (JWT?)
+- Add caching (Redis)
 - DRF versioning (v1)
 - CI integration (Travis? Heroku CI?)
 
@@ -28,7 +28,7 @@ Stack
     - Postgres 9.6 (10.0?)
     - Redis (?)
     - Django 2.0
-    - django-rest-framework
+    - django-rest-framework 3.8
 - Frontend
     - Redux (?)
     - React 16.3
