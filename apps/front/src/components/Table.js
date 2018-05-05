@@ -8,24 +8,31 @@ const Table = ({ data }) =>
   !data.length ? (
     <p>Nothing to show</p>
   ) : (
-    <div className="row">
-      <h2>
-        Showing <strong>{data.length} items</strong>
-      </h2>
-      <table className="table table-striped">
-        <thead>
-          <tr>
-            {Object.entries(data[0]).map(el => <th key={uuid()}>{el[0]}</th>)}
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(el => (
-            <tr key={el.id}>
-              {Object.entries(el).map(el => <td key={uuid()}>{el[1]}</td>)}
+    <div>
+      <div className="row">
+        <h1>
+          Organizations
+        </h1>
+      </div>
+      <div className="row">
+        <p>
+          Showing <strong>{data.length} items</strong>
+        </p>
+        <table className="table table-striped">
+          <thead>
+            <tr>
+              {Object.entries(data[0]).map(el => <th key={uuid()}>{el[0]}</th>)}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map(el => (
+              <tr key={el.id}>
+                {Object.entries(el).map(el => <td key={uuid()}>{el[1]}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 

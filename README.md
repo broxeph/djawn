@@ -13,7 +13,7 @@ To Do
 - Dockerize?
 - Push to Heroku
 - Integrate Redux
-- Move frontend to separate SPA
+- Move frontend to separate SPA, add router
 - CI integration (Travis?)
 
 Installation

@@ -2,10 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import DataProvider from "./DataProvider";
 import Table from "./Table";
+import Form from "./Form";
 
 const App = () => (
-  <DataProvider endpoint="api/organization/"
-                render={data => <Table data={data} />} />
+  <React.Fragment>
+    <DataProvider endpoint="api/organization/" render={data => <Table data={data} />} />
+    <Form endpoint="api/organization/" />
+  </React.Fragment>
 );
 
 const wrapper = document.getElementById("app");
