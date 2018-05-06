@@ -9,13 +9,13 @@ Down the road, we might add goodies like GraphQL and Docker, but let's stick to 
 To Do
 -----
 
-- Add router
-- Add factories, tests (factory-boy/Cypress)
-- Integrate Redux
+- Router (react-router)
+- Factories, tests (factory-boy/Cypress)
 - Dockerize?
 - Push to Heroku/AWS
 - Auth (JWT?)
-- Add caching (Redis)
+- Caching (Redis?)
+- State management (Redux?)
 - DRF versioning (v1)
 - CI integration (Travis? Heroku CI?)
 
