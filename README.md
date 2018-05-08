@@ -9,6 +9,7 @@ Down the road, we might add goodies like GraphQL and Docker, but let's stick to 
 To Do
 -----
 
+- Update table on form change
 - Router (react-router)
 - Factories, tests (factory-boy/Cypress)
 - Dockerize?

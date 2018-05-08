@@ -19,7 +19,7 @@ class Form extends Component {
       body: JSON.stringify(organization),
       headers: new Headers({ "Content-Type": "application/json" })
     };
-    fetch(this.props.endpoint, conf).then(response => console.log(response));
+    fetch(this.props.endpoint, conf).then(response => console.log(response));  // TODO: Add to table
   };
   render() {
     const { name } = this.state;
