@@ -10,6 +10,8 @@ To Do
 -----
 
 - Update table on form change
+    - https://stackoverflow.com/questions/48351487/reactjs-how-do-i-add-a-new-row-to-table-from-form-input-values
+- Add form (modal?)
 - Router (react-router)
 - Factories, tests (factory-boy/Cypress)
 - Dockerize?

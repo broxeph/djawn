@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
 class Form extends Component {
   static propTypes = {
     endpoint: PropTypes.string.isRequired
@@ -27,7 +28,7 @@ class Form extends Component {
       <div className="row">
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
-            <label>Name</label>
+            <label htmlFor="name">Name</label>
             <input
               className="form-control"
               type="text"
