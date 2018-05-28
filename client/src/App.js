@@ -30,7 +30,7 @@ class App extends Component {
           </ul>
         </nav>
 
-        <div id="content">
+        <div id="content" className="container">
           <p className="App-intro">
             This is the best app. It's tremendous. Tremendous app.
           </p>
