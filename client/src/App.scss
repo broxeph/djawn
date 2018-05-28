@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  margin-left: 200px;
 }
 
 .App-logo {
@@ -18,6 +19,30 @@
 
 .App-title {
   font-size: 1.5em;
+}
+
+.App-sidebar {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #007bff;
+  color: #fff;
+
+  .sidebar-header {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  a {
+    color: #fff
+  }
 }
 
 .App-intro {

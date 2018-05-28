@@ -1,6 +1,4 @@
 import React from "react";
-
-// Import React Table
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 

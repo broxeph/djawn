@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import DataProvider from "./DataProvider";
 import Table from "./Table";
 import Form from "./Form";
+
 import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 class App extends Component {
   render() {
@@ -13,13 +15,30 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">DJawn. What up.</h1>
         </header>
-        <p className="App-intro">
-          This is the best app. It's tremendous. Tremendous app.
-        </p>
-        <React.Fragment>
-          <DataProvider endpoint="http://localhost:8000/api/organization/" render={data => <Table data={data} />} />
-          <Form endpoint="http://localhost:8000/api/organization/" />
-        </React.Fragment>
+
+        <nav className="App-sidebar">
+          <div className="sidebar-header">
+            <h3>Menu!</h3>
+          </div>
+          <ul className="list-unstyled components">
+            <li className="active">
+              <a href="#crm"><i className="fa fa-address-book"></i> CRM</a>
+            </li>
+            <li className="active">
+              <a href="#contracts"><i className="fa fa-file"></i> Contracts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div id="content">
+          <p className="App-intro">
+            This is the best app. It's tremendous. Tremendous app.
+          </p>
+          <React.Fragment>
+            <DataProvider endpoint="http://localhost:8000/api/organization/" render={data => <Table data={data} />} />
+            <Form endpoint="http://localhost:8000/api/organization/" />
+          </React.Fragment>
+        </div>
       </div>
     );
   }

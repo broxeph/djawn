@@ -9,8 +9,6 @@ Down the road, we might add goodies like GraphQL and Docker, but let's stick to 
 To Do
 -----
 
-- Update table on form change
-    - https://stackoverflow.com/questions/48351487/reactjs-how-do-i-add-a-new-row-to-table-from-form-input-values
 - Add form (modal?)
 - Router (react-router)
 - Factories, tests (factory-boy/Cypress)
@@ -19,7 +17,6 @@ To Do
 - Auth (JWT?)
 - Caching (Redis?)
 - State management (Redux?)
-- DRF versioning (v1)
 - CI integration (Travis? Heroku CI?)
 
 Stack
