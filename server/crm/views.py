@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from .models import Organization
-from .serializers import OrganizationSerializer
+from .models import Organization, Contact
+from .serializers import OrganizationSerializer, ContactSerializer
 
 
 class OrganizationListCreate(generics.ListCreateAPIView):
@@ -12,3 +12,13 @@ class OrganizationListCreate(generics.ListCreateAPIView):
 class OrganizationDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Organization.objects.all()
     serializer_class = OrganizationSerializer
+
+
+class ContactListCreate(generics.ListCreateAPIView):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
+
+
+class ContactDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer
