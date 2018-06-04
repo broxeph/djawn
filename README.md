@@ -64,7 +64,16 @@ Installation
         - `python manage.py createsuperuser`
     11. Run server!
         - `python manage.py runserver`
-        - Admin should be accessible at `http://127.0.0.1:8000/admin/`
-        - Django REST Framework endpoints should be accessible at e.g. `http://127.0.0.1:8000/api/organization/`
+        - Admin should be accessible at `localhost:8000/admin/`
+        - Django REST Framework endpoints should be accessible at e.g. `localhost:8000/api/organization/`
 - Frontend
-    1. Something something npm
+    1. `cd client`
+    2. Install the version of npm provided by your distribution, if necessary
+        - `sudo apt install -y npm`
+    3. Upgrade to latest version of npm
+        - `sudo npm install -g npm@latest`
+    4. Install npm deps
+        - `npm i`
+    5. Compile and serve client!
+        - `npm start`
+        - Website should be accessible at `localhost:3000`
