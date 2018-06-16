@@ -47,23 +47,25 @@ Installation
 2. Install the [pipenv](https://docs.pipenv.org/) package manager
     - `pip3 install pipenv`
 3. Add pipenv bin folder to (`$HOME/.local/bin`) to `$PATH`
-4. Install Python packages, with optional development packages
+4. Activate pipenv
+    - `pipenv shell`
+5. Install Python packages, with optional development packages
     - `pipenv install -d`
-5. Install Postgres if necessary
+6. Install Postgres if necessary
     - `sudo apt install postgresql postgresql-contrib`
-6. Create Postgres user and database
+7. Create Postgres user and database
     1. `sudo -u postgres psql`
     2. `CREATE USER djawn WITH PASSWORD hunter2;` (replace `hunter2` if you dare)
     3. `CREATE DATABASE djawn OWNER djawn;`
-7. Add database credentials to env var
+8. Add database credentials to env var
     - `export DATABASE_URL=postgres://djawn:hunter2@localhost:5432/djawn`
-8. Add Django secret key to env var
+9. Add Django secret key to env var
     - `export SECRET_KEY=hunter2` (or a somewhat more secure password, for you Krebs readers out there)
-9. Run initial database migration
+10. Run initial database migration
     - `python manage.py migrate`
-10. Create superuser
+11. Create superuser
     - `python manage.py createsuperuser`
-11. Run server!
+12. Run server!
     - `python manage.py runserver`
     - Admin should be accessible at `localhost:8000/admin/`
     - Django REST Framework endpoints should be accessible at e.g. `localhost:8000/api/organization/`
