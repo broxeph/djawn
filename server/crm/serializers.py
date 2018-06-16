@@ -6,10 +6,10 @@ from .models import Organization, Contact
 class OrganizationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Organization
-        fields = ('id', 'name')
+        fields = ('id', 'name', 'created')
 
 
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
-        fields = ('id', 'first_name', 'last_name', 'organization')
+        fields = ('id', 'first_name', 'last_name', 'organization', 'created')
