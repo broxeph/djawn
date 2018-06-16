@@ -7,6 +7,9 @@ const Table = ({ data }) =>
     <p>Nothing to show</p>
   ) : (
     <div>
+      <p className="Table-header">
+        Organizations
+      </p>
       <ReactTable
         data={data}
         columns={[

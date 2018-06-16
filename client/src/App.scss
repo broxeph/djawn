@@ -47,14 +47,19 @@
   a {
     color: #fff
   }
-}
 
-.App-intro {
-  padding-top: 10px;
-  font-size: large;
+  i {
+    margin-right: 7px;
+  }
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.Table-header {
+  padding-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
 }

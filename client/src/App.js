@@ -22,18 +22,15 @@ class App extends Component {
           </div>
           <ul className="list-unstyled components">
             <li className="active">
-              <a href="#crm"><i className="fa fa-address-book"></i> CRM</a>
+              <a href="#organizations"><i className="fa fa-briefcase"></i>Organizations</a>
             </li>
             <li className="active">
-              <a href="#contracts"><i className="fa fa-file"></i> Contracts</a>
+              <a href="#contacts"><i className="fa fa-address-book"></i>Contacts</a>
             </li>
           </ul>
         </nav>
 
         <div id="content" className="container">
-          <p className="App-intro">
-            This is the best app. It's tremendous. Tremendous app.
-          </p>
           <React.Fragment>
             <DataProvider endpoint="http://localhost:8000/api/organization/" render={data => <Table data={data} />} />
             <Form endpoint="http://localhost:8000/api/organization/" />
