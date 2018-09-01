@@ -22,10 +22,10 @@ class App extends Component {
           </div>
           <ul className="list-unstyled components">
             <li className="active">
-              <a href="#organizations"><i className="fa fa-briefcase"></i>Organizations</a>
+              <a href="#organizations"><i className="fa fa-briefcase"/>Organizations</a>
             </li>
             <li className="active">
-              <a href="#contacts"><i className="fa fa-address-book"></i>Contacts</a>
+              <a href="#contacts"><i className="fa fa-address-book"/>Contacts</a>
             </li>
           </ul>
         </nav>

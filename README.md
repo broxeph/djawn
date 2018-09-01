@@ -11,6 +11,7 @@ To Do
 
 - Add form (modal?)
 - Router (react-router)
+    - Switching between Organization and Contact pages should update URL
 - Factories, tests (factory-boy/Cypress)
 - Dockerize?
 - Push to Heroku/AWS
@@ -23,11 +24,11 @@ Stack
 -----
 
 - Backend
-    - Heroku
+    - Heroku (?)
     - Docker (?)
     - Postgres 10.3
     - Redis (?)
-    - Django 2.0
+    - Django 2.1
     - django-rest-framework 3.8
 - Frontend
     - Redux (?)
